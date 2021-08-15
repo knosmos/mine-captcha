@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper Captcha</title>
+        <link rel=icon href=assets/logo.jpg>
+        <link rel=stylesheet href=style.css>
+    </head>
+    <body>
+        <div id=captcha-wrapper>
+            <div id=captcha>
+                <div id=captcha-header>
+                    <h3>Select all four squares with</h3>
+                    <h2>mines</h2>
+                </div>
+                <div id=tile-grid>
+                </div>
+                <hr>
+                <div id=captcha-footer>
+                    <button id=new-puzzle onclick="make_minefield()">NEW</button>
+                    <button id=submit onclick="verification_handler()">VERIFY</button>
+                </div>
+            </div>
+            <p>made by <a href="https://github.com/knosmos">knosmos</a> | inspired by <a href="https://xkcd.com/2496/">xkcd</a></p>
+        </div>
+        <script src=minesweeper.js></script>
+    </body>
+</html>

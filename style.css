@@ -1,0 +1,127 @@
+/* MAIN ELEMENTS */
+
+:root {
+    --primary-color:rgb(68, 143, 228);
+    --border-color:rgb(179, 179, 179);
+}
+
+html, body{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image:url("assets/background.png");
+}
+
+#captcha-wrapper{
+    display:grid;
+    place-items: center center;
+    height:100%;
+}
+
+#captcha{
+    width:25%;
+    border:2px solid var(--border-color);
+    padding:5px;
+    border-radius:2px;
+    background-color:white;
+}
+@media screen and (max-width:800px){
+    #captcha{
+        width:50%;
+    }
+}
+@media screen and (max-width:500px){
+    #captcha{
+        width: auto;
+        margin:20px;
+    }
+}
+
+#captcha-header{
+    padding:20px;
+    background-color: var(--primary-color);
+    color:white;
+}
+
+#tile-grid{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 5px;
+    padding-top: 5px;
+}
+
+
+
+#captcha-footer{
+    text-align: right;
+}
+
+/* IMAGES AND BUTTONS */
+
+.img{
+    width:100%;
+    cursor:pointer;
+    transition: 0.2s box-shadow;
+    position:relative;
+    padding-top:100%;
+}
+
+.img img{
+    position:absolute;
+    width:100%;
+    top:0;
+}
+
+.img:hover{
+    box-shadow: 0px 0px 0px 3px var(--primary-color);
+}
+
+.selected:after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(69, 165, 255, 0.5);
+    box-sizing: border-box;
+    border: 4px solid var(--primary-color);
+}
+
+#submit{
+    background-color: var(--primary-color);
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius:2px;
+    padding:12px;
+    margin:3px;
+    font-size:14pt;
+    border:none;
+    cursor: pointer;
+}
+
+#new-puzzle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius:2px;
+    padding:12px;
+    margin:3px;
+    font-size:14pt;
+    border:none;
+    cursor: pointer;
+}
+
+/* TEXT */
+h2{
+    margin: 2px;
+}
+
+h3{
+    margin: 2px;
+}
+
+hr{
+    border:none;
+    border-bottom:2px solid var(--border-color);
+}
