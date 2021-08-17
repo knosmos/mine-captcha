@@ -36,6 +36,11 @@ body{
         width:50%;
     }
 }
+@media screen and (max-width:700px){
+    #captcha{
+        width:60%;
+    }
+}
 @media screen and (max-width:500px){
     #captcha{
         width: auto;
@@ -103,6 +108,9 @@ body{
     border:none;
     cursor: pointer;
 }
+#submit:hover{
+    background-color:rgb(44, 101, 167);
+}
 
 #new-puzzle{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -112,6 +120,9 @@ body{
     font-size:14pt;
     border:none;
     cursor: pointer;
+}
+#new-puzzle:hover{
+    background-color: rgb(199, 199, 199);
 }
 
 /* TEXT */
