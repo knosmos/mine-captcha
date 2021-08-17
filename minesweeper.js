@@ -69,7 +69,7 @@ function render_minefield(minefield){
                 num = 0;
             }
             let image_num = Math.floor(Math.random()*2);
-            tile_grid.innerHTML += `<div class=img onclick="select(${j}, ${i}, this)"><img src=img/${num}/${image_num}.jpg></div>`;
+            tile_grid.innerHTML += `<div class=img onmousedown="select(${j}, ${i}, this)"><img src=img/${num}/${image_num}.jpg></div>`;
         }
     }
 }
